@@ -1,3 +1,4 @@
+import 'package:color_screen_app/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'home_screen.dart';
@@ -14,11 +15,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
 
         primarySwatch: Colors.blue,
       ),
-      home:const HomeScreen(),
+      home: SplashScreen(),
     );
   }
 }
